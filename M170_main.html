@@ -1,90 +1,182 @@
-            <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
-<HTML>
-<HEAD>
-   <TITLE>Math 170 Home Page</TITLE>
-   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
-   <META NAME="GENERATOR" CONTENT="User-Agent: Mozilla/3.02Gold (Macintosh; I; PPC)">
-</HEAD>
-<BODY BGCOLOR="#FFFFCC" TEXT="#003300" LINK="#000099" VLINK="#3366FF">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Math 170 Home Page</title>
 
+<style>
+  /* ---------- Basic page setup ---------- */
+  body {
+    margin: 0;
+    font-family: "Segoe UI", Verdana, Arial, sans-serif;
+    background-color: #f7f8f2;
+    color: #1a1a2e;
+    line-height: 1.6;
+  }
 
-<H2 ALIGN=CENTER>Calculus I Home Page</H2>
+  a {
+    color: #2a6f2b;
+  }
 
-<CENTER><P>
-<HR WIDTH="100%"></P></CENTER>
+  a:visited {
+    color: #6b4b1e;
+  }
 
-<DL>
-<DT>Professor Jennifer Nordstrom</DT>
+  a:focus,
+  a:hover {
+    outline: 3px solid #f2b705;
+    outline-offset: 2px;
+    text-decoration: underline;
+  }
 
-<DD>Drop in hours: MTWR 1:30-3:00. Please drop by, no appointment necessary. I am often available outside these times, as well.</DD>
+  .skip-link {
+    position: absolute;
+    left: -999px;
+    top: auto;
+    background: #ffffff;
+    color: #2a6f2b;
+    padding: 10px 16px;
+    z-index: 100;
+    border-radius: 0 0 6px 0;
+  }
+  .skip-link:focus {
+    left: 0;
+    top: 0;
+  }
 
+  /* ---------- Header ---------- */
+  header {
+    background-color: #2a6f2b;
+    color: #ffffff;
+    padding: 28px 20px;
+    text-align: center;
+  }
 
+  header h1 {
+    margin: 0;
+    font-size: 1.8em;
+    letter-spacing: 0.5px;
+  }
 
-<DD>Phone: X2654</DD>
-<DD>Office: Taylor 205</DD>
+  /* ---------- Main content area ---------- */
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px 20px 50px 20px;
+  }
 
-<DD>E-mail: <A HREF="mailto:jfirkins@linfield.edu">jnordstrom@linfield.edu</A></DD>
-</DL>
+  section {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  }
 
-<P>
-<HR WIDTH="100%"></P>
+  section h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: #2a6f2b;
+    border-bottom: 2px solid #e7ead9;
+    padding-bottom: 8px;
+  }
 
-<!-- <H4>Tutor:</H4> -->
+  dl {
+    margin: 0;
+  }
+  dl div {
+    margin-bottom: 8px;
+  }
 
-<!-- <DL> -->
-<!-- <DT></DT> -->
+  /* ---------- Navigation links ---------- */
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
 
-<!-- <DD>Time -->
-<!-- </DD> -->
-<!-- </DL> -->
+  nav li {
+    flex: 1 1 220px;
+  }
 
-<!-- <P> -->
-<!-- <HR WIDTH="100%"></P> -->
-</P>
-<CENTER><TABLE BORDER=2 CELLSPACING=2 CELLPADDING=5 >
-<TR ALIGN=CENTER>
+  nav a {
+    display: block;
+    text-align: center;
+    background-color: #f0f5e9;
+    border: 1px solid #cfe0bd;
+    border-radius: 6px;
+    padding: 14px 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #2a6f2b;
+  }
 
-<TD><A HREF="https://nordstrommath.com/syllabus/calcI/CalcI_syllabus.html">Course Syllabus</A></TD>
+  nav a:hover,
+  nav a:focus {
+    background-color: #e2edd4;
+  }
 
-<TD><A HREF="M170F26_hw.html">Course Schedule and Due Dates</A></TD>
+  /* ---------- Footer ---------- */
+  footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    color: #444;
+  }
+</style>
+</head>
 
-</TR>
+<body>
 
-<TR ALIGN=CENTER>
+<a href="#main-content" class="skip-link">Skip to main content</a>
 
-<TD><A HREF="https://library.tbil.org/2026/calculus/frontmatter.html">TBIL Calculus Text</A></TD>
+<header>
+  <h1>Calculus I Home Page</h1>
+</header>
 
-<TD><A HREF="https://library.tbil.org/2026/calculus/exercises/#/bank/">CheckIt Calculus Exercises</A></TD>
+<main id="main-content">
 
+  <section aria-labelledby="instructor-heading">
+    <h2 id="instructor-heading">Instructor Information</h2>
+    <dl>
+      <div><strong>Professor:</strong> Jennifer Nordstrom</div>
+      <div><strong>Drop-in hours:</strong> Monday, Tuesday, Wednesday, Thursday, 1:30&ndash;3:00&nbsp;pm. Please drop by &mdash; no appointment necessary. I am often available outside these times as well.</div>
+      <div><strong>Phone:</strong> X2654</div>
+      <div><strong>Office:</strong> Taylor 205</div>
+      <div><strong>Email:</strong> <a href="mailto:jnordstrom@linfield.edu">jnordstrom@linfield.edu</a></div>
+    </dl>
+  </section>
 
+  <section aria-labelledby="links-heading">
+    <h2 id="links-heading">Course Resources</h2>
+    <nav aria-label="Course resource links">
+      <ul>
+        <li><a href="https://nordstrommath.com/syllabus/calcI/CalcI_syllabus.html">Course Syllabus</a></li>
+        <li><a href="M170F26_hw.html">Course Schedule and Due Dates</a></li>
+        <li><a href="https://library.tbil.org/2026/calculus/frontmatter.html">TBIL Calculus Text</a></li>
+        <li><a href="https://library.tbil.org/2026/calculus/exercises/#/bank/">CheckIt Calculus Exercises</a></li>
+        <!--
+        <li><a href="https://athena.cs.linfield.edu/webwork2/MATH170-Nordstrom/">Calc I WeBWorK</a></li>
+        <li><a href="https://landing.runestone.academy/">Runestone Academy</a></li>
+        -->
+      </ul>
+    </nav>
+  </section>
 
-</TR>
-<!--<TR>
+</main>
 
+<footer>
+  <p>Jennifer Nordstrom<br>
+  Email: <a href="mailto:jnordstrom@linfield.edu">jnordstrom@linfield.edu</a></p>
+</footer>
 
-
-<TD><A HREF="https://athena.cs.linfield.edu/webwork2/MATH170-Nordstrom/">Calc I WeBWorK</A></TD>
-
-<TD><A HREF="https://landing.runestone.academy/">Runestone Academy</A></TD>
-
-
-
-
-</TR>-->
- 
-
-</TABLE></CENTER>
-
-<CENTER><P>
-<HR WIDTH="100%"></P></CENTER>
-
-
-
-</BODY>
-</HTML>
-
-
-
+</body>
+</html>
 
 
 
