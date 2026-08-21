@@ -1,70 +1,190 @@
-            <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
-<HTML>
-<HEAD>
-   <TITLE>Math 230 Home page</TITLE>
-   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
-   <META NAME="GENERATOR" CONTENT="User-Agent: Mozilla/3.02Gold (Macintosh; I; PPC)">
-</HEAD>
-<BODY BGCOLOR="#99ccff" TEXT="#000099" LINK="#ff3366" VLINK="#330033">
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Math 230 Home Page</title>
 
-<H2 ALIGN=CENTER> Discrete Math Home Page</H2>
+<style>
+  /* ---------- Basic page setup ---------- */
+  body {
+    margin: 0;
+    font-family: "Segoe UI", Verdana, Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #1a1a2e;
+    line-height: 1.6;
+  }
 
-<CENTER><P>
-<HR WIDTH="100%"></P></CENTER>
+  a {
+    color: #0033a0;
+  }
 
-<DL>
-<DT>Professor Jennifer Nordstrom</DT>
+  a:visited {
+    color: #5a2a83;
+  }
 
-<DD>Office hours:  MTWR 1:30-3:00 pm.</DD>
+  /* Clear, visible focus outline for keyboard users */
+  a:focus,
+  a:hover {
+    outline: 3px solid #ffb703;
+    outline-offset: 2px;
+    text-decoration: underline;
+  }
 
+  /* Skip link: hidden until a keyboard user tabs to it */
+  .skip-link {
+    position: absolute;
+    left: -999px;
+    top: auto;
+    background: #ffffff;
+    color: #0033a0;
+    padding: 10px 16px;
+    z-index: 100;
+    border-radius: 0 0 6px 0;
+  }
+  .skip-link:focus {
+    left: 0;
+    top: 0;
+  }
 
+  /* ---------- Header ---------- */
+  header {
+    background-color: #0033a0;
+    color: #ffffff;
+    padding: 28px 20px;
+    text-align: center;
+  }
 
-<DD>Phone: X2654</DD>
-<DD>Office: Taylor 205</DD>
+  header h1 {
+    margin: 0;
+    font-size: 1.8em;
+    letter-spacing: 0.5px;
+  }
 
-<DD>E-mail: <A HREF="mailto:jfirkins@linfield.edu">jnordstrom@linfield.edu</A></DD>
-</DL>
+  /* ---------- Main content area ---------- */
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px 20px 50px 20px;
+  }
 
-<P>
-<HR WIDTH="100%"></P>
+  section {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  }
 
-</P>
-<CENTER><TABLE BORDER=2 CELLSPACING=2 CELLPADDING=5 >
-<TR ALIGN=CENTER>
+  section h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: #0033a0;
+    border-bottom: 2px solid #e0e6f0;
+    padding-bottom: 8px;
+  }
 
-<TD><A HREF="https://nordstrommath.com/syllabus/discrete/Discrete_syllabus.html">Course Syllabus</A></TD>
+  /* Instructor info list */
+  dl {
+    margin: 0;
+  }
+  dl div {
+    margin-bottom: 8px;
+  }
+  dt {
+    display: none; /* labels are implied by content; hidden visually, see sr-only note below if needed */
+  }
 
-<TD><A HREF="M230F26_hw.html">Homework Assignments</A></TD>
+  /* ---------- Navigation links ---------- */
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
 
-<!--<TD><A HREF="https://athena.cs.linfield.edu/webwork2/MATH230-Nordstrom/">WeBWorK</A></TD>-->
+  nav li {
+    flex: 1 1 160px;
+  }
 
-<TD><A HREF="https://nordstrommath.com/DiscreteMathText/frontmatter.html">Discrete Math Text</A></TD>
+  nav a {
+    display: block;
+    text-align: center;
+    background-color: #eaf0fb;
+    border: 1px solid #c3d3ef;
+    border-radius: 6px;
+    padding: 14px 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #0033a0;
+  }
 
-<TD><A HREF="https://runestone.academy/">Runestone Academy</A></TD>
+  nav a:hover,
+  nav a:focus {
+    background-color: #d7e3fa;
+  }
 
+  /* ---------- Footer ---------- */
+  footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    color: #444;
+  }
+</style>
+</head>
 
-</TABLE></CENTER>
+<body>
 
-<CENTER><P>
-<HR WIDTH="100%"></P></CENTER>
+<a href="#main-content" class="skip-link">Skip to main content</a>
 
+<header>
+  <h1>Discrete Math Home Page</h1>
+</header>
 
-<!--<P>A helpful resource for the course is Oscar Levin's <A HREF="http://discrete.openmathbooks.org/dmoi3.html">Discrete Mathematics, An Open Introduction</A>. Links to the appropriate sections are provided on the homework page.</P>-->
+<main id="main-content">
 
+  <section aria-labelledby="instructor-heading">
+    <h2 id="instructor-heading">Instructor Information</h2>
+    <dl>
+      <div><strong>Professor:</strong> Jennifer Nordstrom</div>
+      <div><strong>Office hours:</strong> Monday, Tuesday, Wednesday, Thursday, 1:30&ndash;3:00&nbsp;pm</div>
+      <div><strong>Phone:</strong> X2654</div>
+      <div><strong>Office:</strong> Taylor 205</div>
+      <div><strong>Email:</strong> <a href="mailto:jnordstrom@linfield.edu">jnordstrom@linfield.edu</a></div>
+    </dl>
+  </section>
 
+  <section aria-labelledby="links-heading">
+    <h2 id="links-heading">Course Resources</h2>
+    <nav aria-label="Course resource links">
+      <ul>
+        <li><a href="https://nordstrommath.com/syllabus/discrete/Discrete_syllabus.html">Course Syllabus</a></li>
+        <li><a href="M230F26_hw.html">Homework Assignments</a></li>
+        <li><a href="https://nordstrommath.com/DiscreteMathText/frontmatter.html">Discrete Math Text</a></li>
+        <li><a href="https://runestone.academy/">Runestone Academy</a></li>
+      </ul>
+    </nav>
+  </section>
 
+  <section aria-labelledby="contact-heading">
+    <h2 id="contact-heading">Questions?</h2>
+    <p>If you have any questions or comments, please send me an email!</p>
+  </section>
 
+</main>
 
-<P>If you have any questions or comments please send me an email! <BR>
-</P>
+<footer>
+  <p>Jennifer Nordstrom<br>
+  Email: <a href="mailto:jnordstrom@linfield.edu">jnordstrom@linfield.edu</a></p>
+</footer>
 
-<ADDRESS>Jennifer Nordstrom</ADDRESS>
+</body>
+</html>
 
-<ADDRESS>E-mail: <A HREF="mailto:jfirkins@linfield.edu">jnordstrom@linfield.edu</A></ADDRESS>
-
-
-</BODY>
-</HTML>
 
 
 
