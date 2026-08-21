@@ -1,55 +1,187 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
-<HTML>
-<HEAD>
-   <TITLE> J. Nordstrom Homepage</TITLE>
-   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
-   <META NAME="GENERATOR" CONTENT="User-Agent: Mozilla/3.02Gold (Macintosh; I; PPC)">
-</HEAD>
-<BODY BGCOLOR="9cccee" TEXT="#000000" LINK="1010e4" VLINK="#6B4EC3">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>J. Nordstrom Homepage</title>
 
-<H2 ALIGN=CENTER>Dr. Nordstrom's Courses and Office Hours</H2>
+<style>
+  /* ---------- Basic page setup ---------- */
+  body {
+    margin: 0;
+    font-family: "Segoe UI", Verdana, Arial, sans-serif;
+    background-color: #f5f4f7;
+    color: #1a1a2e;
+    line-height: 1.6;
+  }
 
-<CENTER><P>
-<HR WIDTH="100%"></P></CENTER>
+  a {
+    color: #4b2e6f;
+  }
 
-<DL>
-<DT>Professor Jennifer Nordstrom</DT>
+  a:visited {
+    color: #7a4fa0;
+  }
 
-<DD>MTWR:  1:30-3:00. I am also often available on Friday afternoons.</DD>
+  a:focus,
+  a:hover {
+    outline: 3px solid #e0a800;
+    outline-offset: 2px;
+    text-decoration: underline;
+  }
 
+  .skip-link {
+    position: absolute;
+    left: -999px;
+    top: auto;
+    background: #ffffff;
+    color: #4b2e6f;
+    padding: 10px 16px;
+    z-index: 100;
+    border-radius: 0 0 6px 0;
+  }
+  .skip-link:focus {
+    left: 0;
+    top: 0;
+  }
 
+  /* ---------- Header ---------- */
+  header {
+    background-color: #4b2e6f;
+    color: #ffffff;
+    padding: 32px 20px;
+    text-align: center;
+  }
 
-<DD>Phone: X2654</DD>
-<DD>Office: Taylor 205</DD>
+  header h1 {
+    margin: 0 0 6px 0;
+    font-size: 1.9em;
+    letter-spacing: 0.5px;
+  }
 
-<DD>E-mail: <A HREF="mailto:jfirkins@linfield.edu">jnordstrom@linfield.edu</A></DD>
-</DL>
+  header p {
+    margin: 0;
+    color: #e3d6f0;
+    font-size: 1em;
+  }
 
-<P>
-<HR WIDTH="100%"></P>
+  /* ---------- Main content area ---------- */
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px 20px 50px 20px;
+  }
 
-<H2 ALIGN=CENTER>Course pages for Fall 2026</H2>
-</P>
-<CENTER><TABLE BORDER=2 CELLSPACING=2 CELLPADDING=5 >
-<TR ALIGN=CENTER>
+  section {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  }
 
-<!--<TD><A HREF="M365_main.html">Math 365 Game Theory</A></TD>-->
-<TD><A HREF="230_main.html">Math 230 Discrete Math</A></TD>
-<!--<TD><A HREF="M250_main.html">Math 250 Linear Algebra</A></TD>-->
+  section h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: #4b2e6f;
+    border-bottom: 2px solid #e6e0ec;
+    padding-bottom: 8px;
+  }
 
-<!--<TD><A HREF="M120_main.html">Math 120 Intro to Game Theory</A></TD>-->
-<TD><A HREF="M170_main.html">Math 170 Calculus I</A></TD>
-<TD><A HREF="https://nordstrommath.com/syllabus/inqs/INQS_syllabus.html">INQS 125 Game Theory in Popular Culture</A></TD>
-</TR>
- 
+  dl {
+    margin: 0;
+  }
+  dl div {
+    margin-bottom: 8px;
+  }
 
-</TABLE></CENTER>
+  /* ---------- Course links ---------- */
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
 
-<CENTER><P>
-<HR WIDTH="100%"></P></CENTER>
+  nav li {
+    flex: 1 1 240px;
+  }
 
+  nav a {
+    display: block;
+    background-color: #faf9fb;
+    border: 1px solid #e0dbe6;
+    border-left: 6px solid #999;
+    border-radius: 6px;
+    padding: 16px 18px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #1a1a2e;
+  }
 
+  nav a:hover,
+  nav a:focus {
+    background-color: #f1edf5;
+  }
 
+  /* Per-course accent colors, matched to each course's own page theme */
+  nav a.course-230 { border-left-color: #0033a0; } /* Discrete Math - blue */
+  nav a.course-170 { border-left-color: #2a6f2b; } /* Calculus I - green */
+  nav a.course-inqs { border-left-color: #e0a800; } /* INQS 125 - gold */
 
-</BODY>
-</HTML>
+  /* ---------- Footer ---------- */
+  footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    color: #444;
+  }
+</style>
+</head>
+
+<body>
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<header>
+  <h1>Dr. Nordstrom's Courses and Office Hours</h1>
+</header>
+
+<main id="main-content">
+
+  <section aria-labelledby="instructor-heading">
+    <h2 id="instructor-heading">Instructor Information</h2>
+    <dl>
+      <div><strong>Professor:</strong> Jennifer Nordstrom</div>
+      <div><strong>Office hours:</strong> Monday, Tuesday, Wednesday, Thursday, 1:30&ndash;3:00&nbsp;pm. I am also often available on Friday afternoons.</div>
+      <div><strong>Phone:</strong> X2654</div>
+      <div><strong>Office:</strong> Taylor 205</div>
+      <div><strong>Email:</strong> <a href="mailto:jnordstrom@linfield.edu">jnordstrom@linfield.edu</a></div>
+    </dl>
+  </section>
+
+  <section aria-labelledby="courses-heading">
+    <h2 id="courses-heading">Course Pages for Fall 2026</h2>
+    <nav aria-label="Course pages">
+      <ul>
+        <!-- <li><a class="course-365" href="M365_main.html">Math 365 Game Theory</a></li> -->
+        <li><a class="course-230" href="230_main.html">Math 230 Discrete Math</a></li>
+        <!-- <li><a class="course-250" href="M250_main.html">Math 250 Linear Algebra</a></li> -->
+        <!-- <li><a class="course-120" href="M120_main.html">Math 120 Intro to Game Theory</a></li> -->
+        <li><a class="course-170" href="M170_main.html">Math 170 Calculus I</a></li>
+        <li><a class="course-inqs" href="https://nordstrommath.com/syllabus/inqs/INQS_syllabus.html">INQS 125 Game Theory in Popular Culture</a></li>
+      </ul>
+    </nav>
+  </section>
+
+</main>
+
+<footer>
+  <p>Jennifer Nordstrom<br>
+  Email: <a href="mailto:jnordstrom@linfield.edu">jnordstrom@linfield.edu</a></p>
+</footer>
+
+</body>
+</html>
